@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Travel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+header h2{
+letter-spacing:2px;
+}
+
+nav a{
+color:rgb(248, 246, 246);
+text-decoration:none;
+margin:0 15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f2ff;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+animation:fade 2s;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#00eaff;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.4s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+transition:0.5s;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* VIDEO SECTION */
+
+.video-section{
+padding:60px;
+text-align:center;
+}
+
+.video-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+video{
+width:350px;
+border-radius:15px;
+box-shadow:0 0 20px #00eaff;
+}
+
+/* IFRAME */
+
+.iframe-section{
+text-align:center;
+padding:60px;
+}
+
+iframe{
+border-radius:15px;
+box-shadow:0 0 20px #00eaff;
+}
+
+/* AUDIO */
+
+.audio-section{
+text-align:center;
+padding:60px;
+}
+
+audio{
+margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Dream Travel 🌍</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Gallery</a>
+<a href="#">Videos</a>
+<a href="#">Music</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Explore The World</h1>
+<p>Discover beautiful destinations and travel stories</p>
+<br>
+
+<button>Start Journey</button>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="gallery">
+
+<img src="paris.jpg"height="500px">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"height="500px"width="400px">
+
+<img src="switzerland.jpg"height="500px"width="900px">
+
+<img src="london.jpg"height="500px"width="900px">
+
+
+</section>
+
+<!-- VIDEO SECTION -->
+
+<section class="video-section">
+
+<h2>Travel Videos 🎥</h2>
+<br>
+
+<div class="video-container">
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\214940_small.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\172173-846731312_small.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\29224-374487088_small.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\282814_small.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\203803-922187125_medium.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\vidhusha\Downloads\208591_small.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<!-- YOUTUBE IFRAME -->
+
+<section class="iframe-section">
+
+<h2>Travel Vlog 🌄</h2>
+<br>
+
+<iframe width="560" height="315"src="https://www.youtube.com/embed/5qVZVt5zCY8" title="A dreamy winter train trip in Switzerland 🇨🇭 | 5 days exploring the alps, charming towns, christmas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</section>
+
+<!-- AUDIO -->
+
+<section class="audio-section">
+
+<h2>Nature Travel Sound 🎧</h2>
+
+<audio controls>
+<source src="c:\Users\vidhusha\Downloads\suzume_theme_ringtone.mp3" type="audio/mp3">
+</audio>
+
+</section>
+
+<footer>
+
+<p>© 2026 Dream Travel | Explore More ✈️</p>
+
+</footer>
+
+</body>
+</html>
